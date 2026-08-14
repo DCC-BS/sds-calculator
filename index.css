@@ -368,9 +368,8 @@ input {
 }
 
 @media (max-width: 560px) {
-  .sheet__logo,
-  .sheet__divider {
-    display: none;
+  .sheet__header {
+    align-items: center;
   }
 
   .sheet__title {
