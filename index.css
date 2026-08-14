@@ -162,7 +162,7 @@ input {
   width: 30px;
   height: 30px;
   min-height: 30px;
-  margin-top: 11px;
+  margin-top: calc(11px + (1.25em - 30px) / 2);
   border: 1px solid var(--line);
   border-radius: 999px;
   display: grid;
