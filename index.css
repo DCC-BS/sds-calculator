@@ -137,7 +137,7 @@ input {
 
 .questions {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   margin-top: 10px;
 }
 
@@ -336,8 +336,8 @@ input {
 
   .question-card {
     grid-template-columns: 40px 1fr;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--line);
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
   }
 
   .question-card__dimension,
