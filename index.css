@@ -173,7 +173,7 @@ input {
 .question-card__dimension,
 .question-card__question {
   padding: 10px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   line-height: 1.25;
 }
@@ -348,6 +348,18 @@ input {
 
   .question-card__answers {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .question-card__index {
+    width: auto;
+    height: auto;
+    min-height: 0;
+    margin-top: 0;
+    border-radius: var(--radius);
+  }
+
+  .question-card__dimension {
+    min-height: 0;
   }
 
   .software-name {
