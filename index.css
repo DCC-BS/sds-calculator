@@ -349,6 +349,10 @@ input {
   .question-card__answers {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .software-name {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 560px) {
@@ -362,14 +366,13 @@ input {
   }
 
   .question-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 30px 1fr;
   }
 
-  .question-card__index,
   .question-card__dimension,
   .question-card__question,
   .question-card__answers {
-    grid-column: 1;
+    grid-column: 2;
   }
 
   .score {
