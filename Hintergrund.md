@@ -1,6 +1,6 @@
 # Allgemein
 
-Auf der Basis des ZenDiS Diskussionspapier «Kriterien zur Bewertung von Digitaler Souveränität» und aufbauend auf dem SDS-Tool der Landeshauptstadt München.
+Auf der Basis des ZenDiS Diskussionspapier «[Kriterien zur Bewertung von Digitaler Souveränität](https://www.zendis.de/media/pages/newsroom/presse/pressemeldung-konsultationsprozess/6805760d92-1774438919/zendis_diskussionspapier-kriterien-bewertung-digitaler-souveraenitaet.pdf)» und aufbauend auf dem SDS-Tool der Landeshauptstadt München.
 
 ## Überführung der ZenDiS Kriterien
 

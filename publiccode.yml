@@ -1,0 +1,56 @@
+publiccodeYmlVersion: 0.5.0
+name: Digital Sovereignty Score (SDS) Calculator
+url: https://github.com/DCC-BS/sds-calculator
+landingURL: https://dcc-bs.github.io/sds-calculator/
+isBasedOn: https://github.com/it-at-m/sds-calculator
+softwareVersion: "0.0.1"
+releaseDate: 2026-09-10
+platforms:
+  - web
+developmentStatus: development
+softwareType: standalone/web
+organisation:
+  uri: https://ld.admin.ch/canton/12
+  name: Basel-Stadt
+description:
+  en:
+    localisedName: Digital Sovereignty Score (SDS) Calculator
+    shortDescription: HTML application that calculates the
+      Digital Sovereignty Score (SDS) based on a weighted checklist across six
+      dimensions.
+    longDescription: >-
+      A small, static HTML/CSS/JS application that calculates the Digital
+      Sovereignty Score (SDS) based on a weighted checklist across six
+      dimensions.
+
+      See `HINTERGRUND.md` for background on the methodology and how the
+      dimensions map to the ZenDiS criteria catalogue.
+
+
+      - Three-state answer per question (Ja / Teilweise / Nein), each
+      contributing its individual weight to the score
+
+      - Live SDS calculation as a percentage (0–100%) and a score (1 - 6) with a
+      qualitative label (e.g. "hoch ausgeprägt")
+
+      - Questions, weights, and help texts are defined in `questions.js`
+
+      - Accessible by default: native radio inputs per question (screen-reader
+      and keyboard friendly out of the box)
+
+      - No dependencies or build steps (purely static)
+    documentation: https://github.com/DCC-BS/sds-calculator
+    features:
+      - Digital Sovereignty Score (SDS) calculation
+legal:
+  license: MIT
+maintenance:
+  type: internal
+  contacts:
+    - name: Data Competence Center
+      email: dcc@bs.ch
+      affiliation: Statistisches Amt Kanton Basel-Stadt
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - de
