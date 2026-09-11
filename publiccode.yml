@@ -42,6 +42,96 @@ description:
     documentation: https://github.com/DCC-BS/sds-calculator
     features:
       - Digital Sovereignty Score (SDS) calculation
+  de:
+    localisedName: Rechner für den Score Digitale Souveränität (SDS)
+    shortDescription: HTML-Anwendung, die den Score Digitale Souveränität (SDS)
+      anhand einer gewichteten Checkliste über sechs Dimensionen berechnet.
+    longDescription: >-
+      Eine kleine, statische HTML/CSS/JS-Anwendung, die den Score Digitale
+      Souveränität (SDS) anhand einer gewichteten Checkliste über sechs
+      Dimensionen berechnet.
+
+      Hintergrundinformationen zur Methodik und zur Zuordnung der Dimensionen
+      zum ZenDiS-Kriterienkatalog finden sich in `HINTERGRUND.md`.
+
+
+      - Drei Antwortmöglichkeiten pro Frage (Ja / Teilweise / Nein), die jeweils
+      mit ihrer individuellen Gewichtung in den Score einfliessen
+
+      - Live-Berechnung des SDS als Prozentwert (0–100 %) und als Score (1–6)
+      mit qualitativer Bezeichnung (z. B. «hoch ausgeprägt»)
+
+      - Fragen, Gewichtungen und Hilfetexte sind in `questions.js` definiert
+
+      - Standardmässig barrierefrei: native Radio-Buttons pro Frage (ohne
+      Zusatzaufwand screenreader- und tastaturtauglich)
+
+      - Keine Abhängigkeiten oder Build-Schritte (rein statisch)
+    documentation: https://github.com/DCC-BS/sds-calculator
+    features:
+      - Berechnung des Score Digitale Souveränität (SDS)
+  fr:
+    localisedName: Calculateur du score de souveraineté numérique (SDS)
+    shortDescription: Application HTML qui calcule le score de souveraineté
+      numérique (SDS) à l'aide d'une liste de contrôle pondérée couvrant six
+      dimensions.
+    longDescription: >-
+      Une petite application statique HTML/CSS/JS qui calcule le score de
+      souveraineté numérique (SDS) à l'aide d'une liste de contrôle pondérée
+      couvrant six dimensions.
+
+      Des informations sur la méthodologie et sur la correspondance entre les
+      dimensions et le catalogue de critères de ZenDiS figurent dans
+      `HINTERGRUND.md`.
+
+
+      - Trois réponses possibles par question (Ja / Teilweise / Nein), chacune
+      contribuant au score selon sa pondération individuelle
+
+      - Calcul en direct du SDS en pourcentage (0–100 %) et sous forme de note
+      (1–6) avec une appréciation qualitative (p. ex. « hoch ausgeprägt »)
+
+      - Les questions, pondérations et textes d'aide sont définis dans
+      `questions.js`
+
+      - Accessible par défaut : boutons radio natifs pour chaque question
+      (compatibles d'emblée avec les lecteurs d'écran et la navigation au
+      clavier)
+
+      - Aucune dépendance ni étape de build (entièrement statique)
+    documentation: https://github.com/DCC-BS/sds-calculator
+    features:
+      - Calcul du score de souveraineté numérique (SDS)
+  it:
+    localisedName: Calcolatore del punteggio di sovranità digitale (SDS)
+    shortDescription: Applicazione HTML che calcola il punteggio di sovranità
+      digitale (SDS) sulla base di una checklist ponderata articolata in sei
+      dimensioni.
+    longDescription: >-
+      Una piccola applicazione statica HTML/CSS/JS che calcola il punteggio di
+      sovranità digitale (SDS) sulla base di una checklist ponderata articolata
+      in sei dimensioni.
+
+      Informazioni sulla metodologia e sulla corrispondenza tra le dimensioni e
+      il catalogo dei criteri ZenDiS sono disponibili in `HINTERGRUND.md`.
+
+
+      - Tre risposte possibili per domanda (Ja / Teilweise / Nein), ciascuna
+      con la propria ponderazione individuale nel calcolo del punteggio
+
+      - Calcolo in tempo reale dell'SDS in percentuale (0–100%) e come nota
+      (1–6) con una valutazione qualitativa (ad es. «hoch ausgeprägt»)
+
+      - Domande, ponderazioni e testi di aiuto sono definiti in `questions.js`
+
+      - Accessibile per impostazione predefinita: pulsanti radio nativi per ogni
+      domanda (compatibili fin da subito con screen reader e navigazione da
+      tastiera)
+
+      - Nessuna dipendenza né fasi di build (puramente statica)
+    documentation: https://github.com/DCC-BS/sds-calculator
+    features:
+      - Calcolo del punteggio di sovranità digitale (SDS)
 legal:
   license: MIT
 maintenance:
