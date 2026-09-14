@@ -7,6 +7,7 @@
     scoreNumber: document.getElementById('scoreNumber'),
     scoreMeta: document.getElementById('scoreMeta'),
     scoreLabel: document.getElementById('scoreLabel'),
+    scoreFlags: document.getElementById('scoreFlags'),
     notesList: document.getElementById('notesList'),
     copyLink: document.getElementById('copyLink'),
     copyStatus: document.getElementById('copyStatus'),
@@ -149,6 +150,23 @@
     elements.scoreNumber.textContent = String(displayScore);
     elements.scoreMeta.textContent = `${round(points, 1)} von ${maxPoints} gewichteten Punkten`;
     elements.scoreLabel.textContent = findScoreLabel(data, displayScore);
+    updateFlags(data);
+  }
+
+  function updateFlags(data) {
+    const flaggedDimensions = data.questions
+      .filter((question) => {
+        const selected = getAnswer(question.id);
+        return selected && (selected.value === 'no' || selected.value === 'unknown');
+      })
+      .map((question) => question.dimension);
+
+    const dimensions = [...new Set(flaggedDimensions)];
+
+    elements.scoreFlags.hidden = dimensions.length === 0;
+    elements.scoreFlags.textContent = dimensions.length
+      ? `⚠ Zu beachten: ${dimensions.join(', ')}`
+      : '';
   }
 
   function findScoreLabel(data, score) {
