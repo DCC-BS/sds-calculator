@@ -69,6 +69,7 @@ const QUESTIONS = {
   ],
   "notes": [
     "Der Score (1 - 6) wird gewichtet berechnet. Nicht beantwortete Fragen zählen mit 0 Punkten.",
-    "Open Source ist hier kein eigenes Kriterium, sondern ein möglicher Indikator für Governance, Transparenz und Weiterführbarkeit."
+    "Open Source ist hier kein eigenes Kriterium, sondern ein möglicher Indikator für Governance, Transparenz und Weiterführbarkeit.",
+    "Das Ergebnis ist eine Selbsteinschätzung ohne Prüfung von Belegen und dient der schnellen Orientierung, etwa im Beschaffungsvorfeld. Für eine belastbare, nachweisgestützte Bewertung ist der Kriterienkatalog des ZenDiS heranzuziehen."
   ]
 }
