@@ -68,7 +68,7 @@ const QUESTIONS = {
     }
   ],
   "notes": [
-    "Der Score (1 - 6) wird gewichtet berechnet. Nicht beantwortete Fragen zählen mit 0 Punkten.",
+    "Der Score (1 - 6) wird gewichtet berechnet. Nicht beantwortete Fragen zählen mit 0 Punkten. Da sich Schwächen so ausgleichen lassen, werden nicht erfüllte Dimension separat ausgewiesen.",
     "Open Source ist hier kein eigenes Kriterium, sondern ein möglicher Indikator für Governance, Transparenz und Weiterführbarkeit.",
     "Das Ergebnis ist eine Selbsteinschätzung ohne Prüfung von Belegen und dient der schnellen Orientierung, etwa im Beschaffungsvorfeld. Für eine belastbare, nachweisgestützte Bewertung ist der Kriterienkatalog des ZenDiS heranzuziehen."
   ]
