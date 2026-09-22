@@ -165,7 +165,7 @@
 
     elements.scoreFlags.hidden = dimensions.length === 0;
     elements.scoreFlags.textContent = dimensions.length
-      ? `⚠ Zu beachten: ${dimensions.join(', ')}`
+      ? `⚠ Souveränitätslücken: ${dimensions.join(', ')}`
       : '';
   }
 
