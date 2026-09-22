@@ -253,8 +253,7 @@ input {
   font-weight: 800;
 }
 
-.score__meta,
-.score__label {
+.score__meta {
   margin: 6px 0 0;
   color: var(--text-muted);
 }
@@ -271,8 +270,31 @@ input {
   font-weight: 800;
 }
 
-.score__label {
+.score__footer {
   grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.score__label {
+  color: var(--text-muted);
+}
+
+.score__flags {
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 183, 77, 0.6);
+  background: rgba(255, 183, 77, 0.16);
+  color: #ffd699;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.score__flags[hidden] {
+  display: none;
 }
 
 .share {
