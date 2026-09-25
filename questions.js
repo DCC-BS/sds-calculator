@@ -19,12 +19,20 @@ const QUESTIONS = {
   ],
   "questions": [
     {
-      "id": "legal",
-      "param": "legal",
+      "id": "legal_provider",
+      "param": "legal_provider",
       "dimension": "Rechtsraum",
-      "weight": 20,
-      "text": "Unterliegen Anbieter und Datenhaltung dem Rechtsraum der Schweiz oder der EU?",
-      "help": "Berücksichtigt werden Anbieter, Mutterkonzern, relevante Subunternehmer sowie Ort und rechtliche Kontrolle der Datenverarbeitung."
+      "weight": 10,
+      "text": "Unterliegt der Anbieter dem Rechtsraum der Schweiz oder der EU?",
+      "help": "Berücksichtigt werden Anbieter, Mutterkonzern und relevante Subunternehmer - unabhängig davon, wo die Daten tatsächlich liegen."
+    },
+    {
+      "id": "legal_data",
+      "param": "legal_data",
+      "dimension": "Rechtsraum",
+      "weight": 10,
+      "text": "Erfolgt die Datenhaltung (Speicherung und Verarbeitung) im Rechtsraum der Schweiz oder der EU?",
+      "help": "Berücksichtigt werden Ort und rechtliche Kontrolle der Datenverarbeitung, auch bei Subunternehmern - unabhängig vom Sitz des Anbieters."
     },
     {
       "id": "exit",
@@ -38,9 +46,17 @@ const QUESTIONS = {
       "id": "data",
       "param": "data",
       "dimension": "Datenhoheit",
-      "weight": 20,
+      "weight": 10,
       "text": "Können sämtliche Daten vollständig und in offenen Formaten exportiert werden?",
       "help": "Umfasst Nutzdaten, Metadaten, Konfigurationen und nachvollziehbare Exportprozesse."
+    },
+    {
+      "id": "keys",
+      "param": "keys",
+      "dimension": "Datenhoheit",
+      "weight": 10,
+      "text": "Liegt die Hoheit über die Verschlüsselungsschlüssel bei der eigenen Organisation?",
+      "help": "Wer hält die Schlüssel? Berücksichtigt werden eigene Schlüsselverwaltung (z. B. Bring-your-own-Key), Zugriffsmöglichkeiten des Anbieters auf Klartextdaten sowie Nachvollziehbarkeit der Schlüsselverwaltung."
     },
     {
       "id": "interop",
@@ -54,17 +70,33 @@ const QUESTIONS = {
       "id": "ops",
       "param": "ops",
       "dimension": "Betriebsautonomie",
-      "weight": 15,
+      "weight": 10,
       "text": "Ist der Betrieb des Dienstes vom Hersteller entkoppelt möglich (Eigenbetrieb oder Betrieb durch Dritte)?",
       "help": "Relevant sind Eigenbetrieb, Betrieb durch Dritte, Portabilität der Betriebsumgebung und Unabhängigkeit von proprietären Plattformdiensten."
     },
     {
-      "id": "gov",
-      "param": "gov",
+      "id": "docs",
+      "param": "docs",
+      "dimension": "Betriebsautonomie",
+      "weight": 5,
+      "text": "Ist eine vollständige, aktuelle Dokumentation frei verfügbar (technisch und organisatorisch)?",
+      "help": "Verfügbarkeit von Dokumentation erleichtert Eigenbetrieb, Betreiberwechsel und Migration unabhängig vom Hersteller - etwa Architektur-, API- und Betriebsdokumentation."
+    },
+    {
+      "id": "gov_influence",
+      "param": "gov_influence",
       "dimension": "Gestaltungsfähigkeit",
-      "weight": 10,
-      "text": "Besteht Einfluss auf die Weiterentwicklung - bis hin zur Möglichkeit, sie selbst zu übernehmen?",
-      "help": "Open Source, Community-Governance, Roadmap-Einfluss, Erweiterbarkeit und Verfügbarkeit von Know-how können dafür Indikatoren sein."
+      "weight": 5,
+      "text": "Besteht Einfluss auf die Weiterentwicklung, z. B. durch Roadmap-Mitsprache oder eigene Beiträge?",
+      "help": "Open Source, Community-Governance und Roadmap-Einfluss können dafür Indikatoren sein."
+    },
+    {
+      "id": "gov_takeover",
+      "param": "gov_takeover",
+      "dimension": "Gestaltungsfähigkeit",
+      "weight": 5,
+      "text": "Besteht im Bedarfsfall die Möglichkeit, die Weiterentwicklung selbst zu übernehmen?",
+      "help": "Relevant sind Lizenz, Quelloffenheit, Erweiterbarkeit und Verfügbarkeit von Know-how, um den Dienst notfalls in Eigenregie fortzuführen."
     }
   ],
   "notes": [
